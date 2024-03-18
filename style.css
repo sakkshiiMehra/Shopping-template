@@ -1,0 +1,830 @@
+body{
+    font-family: 'Trebuchet MS';
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    margin-right:25px;
+}
+.navbar-brand{
+    font-size:25px;
+    font-weight:bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.bi-justify{
+    font-size: 25px;
+}
+.highlight{
+    background-color:black;
+    color:white;
+    text-align: center;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.bi-lightning-fill{
+    color: gold;
+}
+footer{
+    background-color: black;
+    color:white;
+    height:80vh;
+    margin-top: 20px;
+}
+.title{
+    padding-top:50px;
+    font-size:25px;
+    font-weight:bold;
+    font-family: 'Trebuchet MS';
+    text-align: center;      
+}
+.sub-title{
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.email{
+    background-color: rgb(44, 42, 42);
+    border-radius: 1px;
+    display:inline-block;
+    width:500px;
+    font-size: 20px;
+    padding:20px
+} 
+.btn{
+    background-color:grey;
+    border-radius: 1px;
+    display:inline-block;
+    width:200px;
+    font-size: 20px;
+    padding:20px 
+}
+.footer{
+    display:grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    margin:30px;
+}   
+.footer-brand{
+    font-size:30px;
+    font-family:'Trebuchet MS';
+    font-weight: bold;
+}      
+aside{
+    padding-top:20px;
+    font-size:20px;
+    color:grey;
+} 
+.footer-title~span{
+    display:block;
+    margin-bottom: 5px;
+    color:grey;
+    font-family:'Trebuchet MS';
+}
+.footer-title{
+    margin-bottom: 10px;
+    font-size:15px;
+    font-family: 'Trebuchet MS';
+    font-weight:bold;
+}  
+main{
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    height:450px;
+    margin-top:20px;
+}
+.women{
+    background-image: url(public/images/women.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}        
+.men{
+    background-image: url(public/images/men-banner.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.kid{
+    background-image: url(public/images/kid-banner.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+button{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    width:150px;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+.women button span,.men button span,.kid button span{
+    transition: margin-left 500ms;
+}
+.women:hover button span,.men:hover button span,.kid:hover button span{
+    margin-left: 10px;
+}
+.women:hover,.men:hover,.kid:hover{
+    opacity: 1;
+}
+.container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-gap:30px;
+    padding-left:50px;
+    height:100px;
+    border:none;
+    border-bottom: 1px solid gray;
+    padding:10px;
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+    margin-top: 15px;
+    margin: 50px;
+}
+.bi-truck,.bi-arrow-down-short,.bi-lock,.bi-tag-fill{
+    font-size: 20px;
+    color:coral;
+}
+.body-sub-title{
+    color: gray;
+    margin-left: 30px;
+    padding:15px;
+}
+.block1{
+    color:gray;
+    text-align: center;
+    height: 100px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS';
+    padding-top: 40px;
+    padding:-10px;
+}
+.block-title{
+    font-size: 40px;font-weight: bold;color: black;
+}
+.sec-part2{
+    display:grid;
+    grid-template-columns: 3fr 6fr;
+    grid-gap:30px;
+    height:450px;
+    padding-top:100px;
+    margin:50px;
+}
+.bags{
+    background-image: url(public/images/bag-banner.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.men-shirt{
+    background-image: url(public/images/shirt-banner.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color:black;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.bags:hover,.men-shirt:hover,.dress:hover,.sweater:hover{
+    transform: translateX(-10px);
+    transition: 500ms;
+}
+.bags span span,.men-shirt span span,.dress span span,.sweater span span{
+    transition:margin-left 500ms;
+}
+.bags:hover span span,.men-shirt:hover span span,.dress:hover span span,.sweater:hover span span{
+    margin-left:10px;
+}
+.discount{
+    position: absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:5px;
+    width: 50px;
+    height:50px;
+    border-radius:100px;
+    background-color:red;
+    top:10px;
+    right:10px;
+    color: white;
+}
+.sec-part3{
+    display:grid;
+    grid-template-columns: 6fr 3fr;
+    grid-gap:30px;
+    height:450px;
+    margin-top:20px;
+    margin:50px;
+}
+.dress{
+    background-image: url(public/images/dress-banner.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color:black;
+    padding: 20px;
+    margin-top: 20px;
+}
+.sweater{
+    background-image: url(public/images/sweater-banner.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color:white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.block2{
+    color:black;
+    text-align: center;
+    height: 150px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    padding-top: 10px;
+}
+.block2 nav{
+    font-size: 15px;
+    color: red;
+    margin-left:20px;
+}
+#sec-part4{
+display: grid;
+grid-template-columns: 3fr 3fr 3fr 3fr;
+grid-gap:15px;
+padding:50px;
+margin-bottom:-150px;
+}
+.card-footer{
+border-top: none;
+background-color:white;
+}
+#sec-part5{
+display: grid;
+grid-template-columns: 3fr 3fr 3fr 3fr;
+grid-gap:30px;
+padding:50px;
+}
+#c1 span,#d2 span{
+font-size: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#c3 span,#d4 span{
+font-size: 15px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#c1-body{
+background-image: url(public/images/bs.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+overflow: hidden;
+}
+#c1-body:hover{
+background-image: url(public/images/card1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+}
+#c2-body{
+background-image: url(public/images/c2.PNG);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+overflow: hidden;
+}
+#c2-body:hover{
+background-image: url(public/images/tops-bottoms.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+}
+#c3-body{
+background-image: url(public/images/c3.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+overflow: hidden;
+}
+#c3-body:hover{
+background-image: url(public/images/sneakers.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+}
+#c4-body{
+background-image: url(public/images/c4.PNG);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+overflow: hidden;
+}
+#d1-body{
+background-image: url(public/images/d1.PNG);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+overflow: hidden;
+}
+#d2-body{
+background-image: url(public/images/d2.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+overflow: hidden;
+}
+#d2-body:hover{
+background-image: url(public/images/perse.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+}
+#d3-body{
+background-image: url(public/images/d3.PNG);
+background-size: cover;
+background-repeat: no-repeat;
+width:100%;
+height: 250px;
+overflow: hidden;
+}
+#d3-body:hover{
+    background-image: url(public/images/skirt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 250px;
+}
+#d4-body{
+    background-image: url(public/images/d4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 250px;
+    overflow: hidden;
+}
+.icons{
+    text-align: center;
+    padding-top: 250px;
+}
+.bi-eye,.bi-cart,.bi-heart{
+    font-size: 20px;
+}
+.bi-eye:hover,.bi-cart:hover,.bi-heart:hover{
+    background-color: coral;
+}
+.icons div{
+    width: 25px; height:25px; border-radius: 25px;
+    box-shadow: 2px 2px 2px gray;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    display: inline-block;
+}
+#c1,#c2,#c3,#c4,#d1,#d2,#d3,#d4{
+transform: translateY(65px);
+transition: 300ms;
+}
+.icons:hover div{
+transform: translateY(-65px);
+transition: 300ms;
+}
+.sec-part7{
+    display:grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-gap:20px;
+    height:300px;
+    margin: 20px;
+    color:gray;
+   font-size: 15px;
+}
+.fig1 div,.fig2 div,.fig3 div,.fig4 div{
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.block3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.discover{
+    width: 120px;
+    padding-left: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: -150px;
+}
+.sec-part8{
+    background-image: url(public/images/sandal-banner.jpg);
+    background-size: cover;
+    display:block;
+    color: black;  
+}
+.sec-part8 div{
+    text-align:right;
+    padding-top: 20px;
+}
+.sec-part8 .btn{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+.block4{
+    color:gray;
+    text-align: center;
+    height: 150px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS';
+    padding-top: 80px;
+}
+.sec-part9{
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-gap:20px;
+    height:70vh;
+    margin:30px;
+    padding:50px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.e1,.e3{
+    width:100%;
+    height:400px;
+    border:1px solid #b5b1b1;
+}
+.e2{
+    width:100%;
+    height:420px;
+    border:1px solid #b5b1b1;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+.col2{
+    margin-left: -50px;
+    margin-top:40px;
+}
+.col2 span{
+    margin-right:0;
+}
+.row2{
+    text-align:justify;
+    color: gray;
+    padding-right:80px;
+    padding-left:20px;
+}
+.bi-star-fill{
+    color:gold;
+}
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.bi-three-dots{
+    color: coral;
+    font-size: 80px;
+    text-shadow: 2px 2px 2px gray;
+}
+.bi-dot{
+    color:white;
+    font-size:80px;
+    text-shadow: 2px 2px 2px gray;
+}
+figure span{
+    margin-right:-30px;
+}
+.sec-part10{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-gap:5px;
+    height:250px;
+    margin-top:20px;
+    margin: 50px;
+}
+.block5{
+    color:gray;
+    text-align: center;
+    height: 100px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS';
+    padding-top: -50px;
+}
+.f1{
+    background-image: url(public/images/f1.PNG);
+    background-size: cover;
+    height: 150px;
+    opacity: 0.9;
+}        
+.f2{
+    background-image: url(public/images/f2.PNG);
+    background-size: cover;
+    height: 150px;
+    opacity: 0.9;
+}
+.f3{
+    background-image: url(public/images/f3.PNG);
+    background-size: cover;
+    height: 150px;
+    opacity: 0.9;
+}
+.f4{
+    background-image: url(public/images/f4.PNG);
+    background-size: cover;
+    height: 150px;
+    opacity: 0.9;
+}
+.f5{
+    background-image: url(public/images/f5.PNG);
+    background-size: cover;
+    height: 150px;
+    opacity: 0.9;
+}
+.f6{
+    background-image: url(public/images/f6.PNG);
+    background-size: cover;
+    height: 150px;
+    opacity: 0.9;
+}
+.f1:hover,.f2:hover,.f3:hover,.f4:hover,.f5:hover,.f6:hover{
+    opacity: 1;
+}
+#heart,.bi-chat-left{
+    font-size: 12px;
+    color: white;
+}
+.f1 div,.f2 div,.f3 div,.f4 div,.f5 div,.f6 div{
+    text-align: center;
+    margin-top:60px;
+    margin-left:20px;
+    visibility: hidden;
+}
+.f1:hover div,.f2:hover div,.f3:hover div,.f4:hover div,.f5:hover div,.f6:hover div{
+    visibility: visible;
+}
+.box{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    margin: 50px;
+    margin-top: -100px;
+}  
+
+@media screen and (orientation:landscape){
+    .bi-justify{
+        display: none;
+    }
+}
+@media screen and (orientation:portrait){
+    .navbar-brand,.bi-justify{
+        margin-right: -30px;
+    }
+    .bi-justify{
+        margin-left:100px;
+    }
+    .nav-items,.shortcut-items{
+        display: none;
+    }
+    button{
+        display:inline;
+    }
+    .highlight{
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    .women{
+       grid-row:1;
+       grid-column: 1/4;
+       height: 500px;
+       width: 370px;
+    }
+    .women h1{
+        font-size: 50px;
+    }
+    .women button{
+        width:250px;
+        font-size: 25px;
+    }
+    .men,.kid{
+        display: none;
+    }
+    .container{
+      display: block;
+      height: 400px;
+      width:400px;
+      font-size: 22px;
+      margin-bottom: 15px;
+      margin-left: -10px;
+    }
+    .container .body-sub-title{
+        margin-bottom: 25px;
+    }
+    .bi-truck,.bi-arrow-down-short,.bi-lock,.bi-tag-fill{
+        font-size: 22px;
+    }
+    .block1{
+       width:370px;
+       height: 150px;
+       font-size: 22px;
+    }
+    .sec-part2,.sec-part3{
+       display: block;
+       height:1100px;
+    }
+    .bags,.men-shirt,.dress,.sweater{
+       height:500px;
+       width:300px;
+       margin-left: -30px;
+       margin-bottom: 20px;
+    }
+    .bags h1,.men-shirt h1,.dress h1,.sweater h1{
+        font-size: 30px;
+    }
+    .bags span,.men-shirt span,.dress span,.sweater span{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .block2{
+        width: 400px;
+        height:100px;
+        font-size: 40px;
+        margin-left: -10px;
+    }
+    .block2 nav span{
+        font-size: 30px;
+    }
+    #sec-part4,#sec-part5{
+       grid-template-columns: 6fr 6fr;
+       grid-gap:30px;
+       height:900px;
+       width:400px;
+    }
+    #c1,#c2,#c3,#c4,#d1,#d2,#d3,#d4{
+        width: 200px;
+        height:200px;
+        background-size: cover;
+        margin-left: -60px;
+        padding: 10px;
+    }
+    #c1 .card-footer,#c2 .card-footer,#c3 .card-footer,#c4 .card-footer,#d1 .card-footer,#d2 .card-footer,#d3 .card-footer,#d4 .card-footer{
+        font-size: 25px;
+    }
+    .block3{
+      height: 50px;
+    }
+    .block3 div{
+        font-size: 30px;
+        width:200px;
+    }
+    .sec-part8{
+        margin-left: -250px;
+    }
+    .sec-part8 h2{
+        font-size: 40px;
+    }
+    .sec-part8 span{
+        font-size: 20px;
+    }
+    .sec-part8 .btn{
+        font-size: 30px;
+    }
+    .e2,.e3{
+        display: none;
+    }
+    .e1{
+        grid-row:1;
+        grid-column: 1/4;
+        width:370px;
+        height:700px;
+        margin-left: -80px;
+    }
+    .e1 .row1 .col1{
+        width:200px;
+    }
+    .e1 .col2,.e1 .row2{
+        font-size: 30px;
+    }
+    .block5 div{
+        font-size: 20px;
+    }
+    .sec-part10{
+        width:400px;
+        height: 500px;
+        grid-template-columns: 6fr 6fr;
+        margin-left: -10px;
+    }
+    .f1,.f2,.f3,.f4,.f5,.f6{
+        width:200px;
+        height:200px;
+    }
+    .box{
+        grid-template-columns:4fr 4fr 4fr;
+        width:300px;
+        height:200px;
+        margin-top: 200px;
+        margin-left: -10px;
+    }
+    .box div{
+        width:150px;
+    }
+    footer{
+        height:700px;
+        width:400px;
+        margin-left: -10px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns:7fr 5fr;
+    }
+    .footer-1{
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 20px;
+    }
+    .footer-1 aside span{
+        font-size: 13px;
+    }
+    .footer-2{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .footer-3{
+        grid-row:2;
+        grid-column: 2;
+    }
+    .footer-4{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .footer-5{
+        grid-row:3;
+        grid-column: 2;
+    }
+    .footer-2,.footer-3,.footer-4,.footer-5{
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+}    
